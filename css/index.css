@@ -28,10 +28,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
 body {
-    
-	line-height: 1;
+    line-height: 1;
+    animation: fadeIn ease 2s;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -70,10 +77,21 @@ header div {
     margin: 40px 0 20px 0;
 }
 
+@keyframes blue-hover {
+    0% {background-color: white; color: dodgerblue}
+    100% {background-color: dodgerblue; color: white;}
+}
+
 header div a {
     text-decoration: none;
     color: black;
     font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+header div a:hover {
+    animation: blue-hover ease 1s;
 }
 
 .index-banner {
@@ -101,7 +119,7 @@ header div a {
 .learn-more-button {
     border: 2px solid black;
     border-radius: 10px;
-    width: 30%;
+    width: 125px;
     text-align: center;
     padding: 8px 15px;
     font-size: 15px;
@@ -175,7 +193,7 @@ p {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     margin: 20px 2.5%;
     color: white;
@@ -198,6 +216,27 @@ p {
     padding-right: 0;
 }
 
+.contact-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section textarea {
+    width: 100%;
+    height: 300px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.contact-section form button {
+    margin: 20px auto;
+    width: 200px;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -206,8 +245,8 @@ footer {
 footer nav {
     width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 20px;
+    justify-content: space-around;
     padding: 20px 2%;
     font-size: 14px;
 }
@@ -227,3 +266,29 @@ footer nav a {
 .box8 {background-color: hotpink}
 .box9 {background-color: indigo}
 .box10 {background-color: dodgerblue}
+
+@media screen and (max-width: 600px){
+
+    body {
+        width: auto;
+        display: block;
+    }
+    body header {
+        display: block;
+        width: 80%;
+    }
+    body div {
+        display: block;
+    }
+
+    body div div {
+        width: 70%;
+    }
+
+    body div section {
+        flex-direction: column;
+        padding: 0 2.5%;
+        width: 57.5%;
+    }
+
+}
