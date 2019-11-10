@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+### Semantic HTML is a naming convention used by devlopers to bring meaning to their HTML tags. This meaning will help other developers to understand the layout of the HTML so they can work on the same project together or it could be understood by other groups of developers. We would encase a group of elements that reside on the top of the page in another element called "header" to imply that these markups have the title of the page and they usually contain navigation links as well.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+### The major differences would be the how the elements would be place on the screen. The block property will make the element break a line below its neighboring element an area where it could fill the page without distorting its size. The inline property will allow the element to show on the same line with other elements, but may disregard its sizing in order to fit in the same line.
 
 3. What are the 4 areas of the box model?
 
+### Starting from the outside to inside: Margin, border, padding, content. The margin property gives more empty space around the actua content. Border changes the how the edges of the content appear. Padding could be used to thicken the content. Content is basically the content that you wanted to show the browsers.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+### Because the items are moving up and down on the page, align items would work on the y-axis.
+
 5. Explain why git is valuable to a team of developers.
+
+### Git is essential to developers because we would have to save our code in order to to see our work take affect. This could be problematic because once we save our work, going back to how our project was before would be time consuming and difficult. Git is a version control software that tracks all of our saved works and we could then push our work to github so we could preserve that specific time of our projet that we could go back to when necessary. It also serves as a way for a group of developers to work together as they can branch off (so it wouldn't affect the master project) from the master project to do their part, push it to github, and then pull and merge it back to the master project. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
