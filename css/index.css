@@ -94,10 +94,17 @@ header div a:hover {
     animation: blue-hover ease 1s;
 }
 
-.index-banner {
-    background-image: url("../img/jumbo.jpg");
+.banner {
     height: 150px;
     margin: 20px 0 20px 0;
+}
+
+.index-banner {
+    background-image: url("../img/jumbo.jpg");
+}
+
+.about-banner {
+    background-image: url("../img/jumbo-about.png");
 }
 
 .about-top-section {
@@ -134,13 +141,9 @@ header div a:hover {
 
 .info-box p {
     margin-bottom: 10px;
+    width: 400px;
 }
 
-.about-banner {
-    background-image: url("../img/jumbo-about.png");
-    height: 150px;
-    margin: 20px 0 20px 0;
-}
 
 html, body {
     height: 100%;
@@ -267,28 +270,33 @@ footer nav a {
 .box9 {background-color: indigo}
 .box10 {background-color: dodgerblue}
 
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 600px) {
     body {
-        width: auto;
-        display: block;
+
     }
-    body header {
+    header {
         display: block;
-        width: 80%;
+        padding: 2%;
     }
-    body div {
+
+    header div {
         display: block;
     }
 
-    body div div {
-        width: 70%;
+    .banner {
+        width: 100vw;
     }
 
     body div section {
-        flex-direction: column;
-        padding: 0 2.5%;
-        width: 57.5%;
+        width: 95vw;
+        display: block;
     }
 
+    body div section div {
+        margin: 0 5%;
+    }
+
+    footer {
+        width: 95vw;
+    }
 }
